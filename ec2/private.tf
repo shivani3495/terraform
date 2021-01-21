@@ -49,9 +49,9 @@ resource "aws_instance" "db-1" {
     
     user_data = <<-EOF
         #!/bin/bash
-         apt update -y
-         apt install -y mysql56-server
-         service mysqld start
+        sudo apt update -y
+        sudo apt install mysql-server -y
+        sudo mysql_secure_installation
 
     EOF
 }
