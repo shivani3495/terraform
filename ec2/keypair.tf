@@ -8,4 +8,3 @@ key_name = "tfkeypair"
 public_key = file("publickey.pub")
 }
 
-
